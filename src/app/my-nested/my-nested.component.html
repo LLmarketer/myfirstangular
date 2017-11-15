@@ -1,0 +1,16 @@
+<p class="red">
+  my-nested works!
+</p>
+<ul>
+    <li *ngFor="let x of animals">
+      <!-- this animals is the reference to array of object
+      which is declared in the my-nested.component.ts -->
+      <!-- anything starting *ng is directives
+      which mean in this case a for loop -->
+        {{ x.id }}
+        {{ x.name }}
+        {{ x.category }}
+    </li>
+  </ul>
+  <!-- the below is an if stamenent in the angular syntax -->
+  <p *ngIf="animals.length > 3"> There are many animals! </p>
